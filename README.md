@@ -106,6 +106,10 @@ This skill gives your AI coding tool comprehensive Swift Concurrency guidance. I
 
 **Practical & Concise**: Assumes your AI agent is already smart. Focuses on what developers need to know, not what they already understand. Includes code examples for every pattern.
 
+## See it in action
+[![Youtube Video](assets/agent_skills_watch_on_youtube.png)](https://www.youtube.com/watch?v=khekVi1PK3o)
+
+
 ## Skill Structure
 
 ```
