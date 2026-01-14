@@ -1,0 +1,55 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "swift-concurrency-agent-skill",
+  "version": "1.0.0",
+  "owner": {
+	"name": "Antoine van der Lee",
+	"email": "contact@avanderlee.com"
+  },
+  "metadata": {
+  	"description": "Adds expert guidance on Swift Concurrency best practices, patterns, and implementation."
+  },
+  "plugins": [
+    {
+      "name": "swift-concurrency",
+      "description": "Expert guidance on Swift Concurrency best practices, patterns, and implementation.",
+      "repository": "https://github.com/AvdLee/Swift-Concurrency-Agent-Skill",
+      "version": "1.0.0",
+      "author": {
+        "name": "Antoine van der Lee",
+        "email": "contact@avanderlee.com"
+      },
+      "license": "MIT",
+      "category": "documentation",
+      "keywords": [
+        "swift",
+        "documentation",
+        "apple",
+        "programming-language",
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "tags": [
+        "swift",
+        "documentation",
+        "apple",
+        "programming-language",
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "source": "./",
+      "skills": [
+        "./swift-concurrency"
+      ],
+      "strict": false
+    }
+  ]
+}
