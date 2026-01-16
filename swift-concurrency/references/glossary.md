@@ -54,4 +54,43 @@ An annotation used to suppress Sendable-related diagnostics from a module that p
 
 Mechanisms that model ownership transfer so certain non-Sendable values can be moved between regions safely. The `sending` keyword enforces that a value is no longer used after transfer.
 
+## AsyncSequence
+
+A protocol for types that provide asynchronous, sequential iteration over elements. Conforms to the `for await` loop pattern. Use for streaming data where elements arrive over time.
+
+## AsyncStream
+
+A concrete implementation of `AsyncSequence` that bridges callback-based or delegate-based APIs to async/await. Provides `yield()` to emit values and `finish()` to complete the stream.
+
+## Continuation
+
+A mechanism to bridge callback-based APIs to async/await. `withCheckedContinuation` and `withCheckedThrowingContinuation` provide safe bridging with runtime checks. `withUnsafeContinuation` variants skip checks for performance-critical code.
+
+## Task Local
+
+Task-scoped storage that propagates values through the task hierarchy automatically. Declared with `@TaskLocal` and accessed via the wrapper's static property. Child tasks inherit parent task locals.
+
+## Cooperative thread pool
+
+Swift's threading model where tasks run on a limited pool of threads managed by the runtime. Tasks yield cooperatively at suspension points, allowing other tasks to run. Avoid blocking operations that would starve the pool.
+
+## Executor
+
+The scheduling mechanism that determines where and when actor code runs. `MainActor` uses the main thread executor. Custom actors use the default executor unless a custom executor is specified.
+
+## Structured concurrency
+
+A pattern where child tasks have a well-defined relationship to parent tasks. Child tasks must complete before the parent scope exits. Provides automatic cancellation propagation and prevents orphaned tasks. Implemented via `async let` and `TaskGroup`.
+
+## Isolation domain
+
+A boundary that protects mutable state from concurrent access. Each actor instance defines its own isolation domain. The `@MainActor` global actor defines a shared isolation domain for UI work. Code must cross isolation boundaries explicitly via `await`.
+
+## Task priority
+
+A hint to the runtime about the relative importance of a task. Priorities include `.high`, `.medium`, `.low`, `.userInitiated`, `.utility`, and `.background`. Higher priority tasks are scheduled before lower priority ones. Priority can escalate when a high-priority task awaits a low-priority one.
+
+## Cancellation
+
+A cooperative mechanism to signal that a task should stop. Check `Task.isCancelled` or call `Task.checkCancellation()` (throws) in long-running work. Cancellation propagates to child tasks in structured concurrency.
 
