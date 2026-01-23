@@ -197,7 +197,7 @@ To test your changes locally:
 ## ❓ Questions?
 
 - **About Agent Skills format**: See [agentskills.io](https://agentskills.io/home) or [Anthropic's docs](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview)
-- **About Swift Concurrency**: Check the [references/](swift-concurrency/references/) folder or [SwiftLee blog](https://www.avanderlee.com/category/concurrency/)
+- **About Swift Concurrency**: Check the [references folder](swift-concurrency/references/) or [SwiftLee blog](https://www.avanderlee.com/category/concurrency/)
 - **About this skill**: Open an issue for discussion
 
 ## 📄 License
