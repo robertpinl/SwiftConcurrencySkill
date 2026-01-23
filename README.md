@@ -17,22 +17,16 @@ Based on the comprehensive [Swift Concurrency Course](https://www.swiftconcurren
 
 ## How to Use This Skill
 
-### Option A: Using OpenSkills (recommended)
-1) Install OpenSkills:  
-   ```bash
-   npm i -g openskills
-   ```
-2) `cd` into your project directory.  
-3) Install this skill:  
-   ```bash
-   openskills install avdlee/Swift-Concurrency-Agent-Skill
-   ```
-4) Sync into your `AGENTS.md`:  
-   ```bash
-   openskills sync
-   ```
-5) Use the skill in your AI agent, for example:  
-   > Use the swift concurrency skill and analyze the current project for Swift Concurrency improvements
+### Option A: Using skills.sh (recommended)
+Install this skill with a single command:
+```bash
+npx skills add https://github.com/avdlee/swift-concurrency-agent-skill --skill swift-concurrency
+```
+
+For more information, visit the [skills.sh platform page](https://skills.sh/avdlee/swift-concurrency-agent-skill/swift-concurrency).
+
+Then use the skill in your AI agent, for example:  
+> Use the swift concurrency skill and analyze the current project for Swift Concurrency improvements
 
 ### Option B: Claude Code Plugin
 
