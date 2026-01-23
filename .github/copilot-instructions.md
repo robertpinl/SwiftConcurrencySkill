@@ -80,7 +80,7 @@ Review code changes as an **Agent Skills expert**, focusing on the [Agent Skills
 - **Be constructive**: Suggest improvements that align with Agent Skills best practices
 - **Reference the spec**: Point to specific sections of the Agent Skills documentation when relevant
 - **Focus on agent usability**: Will an AI agent be able to discover, load, and use this skill effectively?
-- **Consider cross-surface compatibility**: Skills should work across Claude API, Claude Code, Claude.ai, and other compatible agents
+- **Consider cross-surface compatibility**: Skills should work across different AI coding assistants and platforms that support the Agent Skills format (for example, GitHub Copilot, Claude-based tools, and other compatible agents)
 
 ### Resources to Reference
 
